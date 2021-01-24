@@ -1,37 +1,14 @@
-## Welcome to GitHub Pages
+# Hello! I'm Rachel and I'm a PhD student in Columbia's E3B department.
 
-You can use the [editor on GitHub](https://github.com/cohen-r/cohen-r.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+![https://avatars.githubusercontent.com/u/71609947?s=400&u=dbb92f9aa4938ff5ce4a8e269c145152cc5f4943&v=4
+](https://avatars.githubusercontent.com/u/71609947?s=400&u=dbb92f9aa4938ff5ce4a8e269c145152cc5f4943&v=4)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## About
 
-### Markdown
+I'm originally from the San Francisco Bay Area. I did my undergrad work at Amherst College in Massachusett's Pioneer Valley, where I majored in Biology. I've done fieldwork in Costa Rica, Bhutan, Italy, Maryland, and Massachusetts (mostly in mountain landscapes). Before starting my PhD I spent a year in Peru's lowland Amazon, working with undergraduates interested in environmental science and biology! Now my home is at the Eaton lab in New York City! I love cooking, playing scrabble, and hiking. 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Research
 
-```markdown
-Syntax highlighted code block
+My research focuses on the evolutionary history and consequences of biotic interactions, using plant systems as models. I use bioinformatics and phylogenmics as tools to answer broader questions about coevolutionary phenomena. I currently work with plants in the genus *Pedicularis*, which parasitize a broad range of host plants, including grasses and sedges.
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/cohen-r/cohen-r.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
