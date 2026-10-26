@@ -1,5 +1,8 @@
 # Teaching notebooks.
-#   repo / file:               where the notebook is read online and its source
+#   page:                      the rendered copy in teaching/notebooks/ (the
+#                              "Read the notebook" link). See README for how
+#                              to re-render after you edit a notebook.
+#   repo / file:               the notebook's source on GitHub
 #   binder_repo / binder_file: a repo with an environment.yml (and any data)
 #                              so Binder can run it; leave out to hide the
 #                              "Run in Binder" link
@@ -16,6 +19,7 @@
   repo: teaching_coding_notebooks
   file: Lotka-volterra.ipynb
   binder_repo: bio_interactions_lotka_volterra
+  page: lotka-volterra
   binder_file: Lotka-volterra.ipynb
 
 - title: "Modeling ecological communities with joint species distribution models"
@@ -29,6 +33,7 @@
   repo: teaching_coding_notebooks
   file: JSDMs.ipynb
   binder_repo: biointeractions_jsdm
+  page: jsdm
   binder_file: JSDMs.ipynb
 
 - title: "Phylogenetics: gene trees, species trees, and incomplete lineage sorting"
@@ -42,6 +47,7 @@
   repo: teaching_coding_notebooks
   file: "phylogenetics (4).ipynb"
   binder_repo: fundamentals-notebooks
+  page: phylogenetics
   binder_file: phylogenetics.ipynb
 
 - title: "Teaching inheritance with Punnett squares"
@@ -54,4 +60,5 @@
   repo: teaching_coding_notebooks
   file: LC_TeachingAboutInheritance.ipynb
   binder_repo: ctrl_alt_teach_lc_nb
+  page: punnett-squares
   binder_file: LC_TeachingAboutInheritance.ipynb

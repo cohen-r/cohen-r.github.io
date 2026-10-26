@@ -2,44 +2,60 @@
 # Published papers are grouped by year, newest first.
 # Anything with a "status" goes under "In review and in preparation".
 #
-# Fields (only title, authors, and year are required):
+# Fields:
 #   title:    Paper title (wrap species names in <i></i> to italicize them)
-#   authors:  Author list as it appears in the citation. Your name is bolded
-#             automatically if it matches author.citation_names in _config.yml.
-#   year:     Publication year as a number, e.g. 2025 (leave out for in-prep work)
+#   authors:  Author list. Your name is bolded automatically.
+#             An asterisk (*) after a name marks an undergraduate mentee.
+#   year:     Publication year as a number (leave out for work in review)
 #   venue:    Journal name
-#   details:  Volume, issue, pages, e.g. "112(4): e70012"
-#   status:   "In review", "In revision", "In preparation", etc.
-#   doi:      DOI only, without https://doi.org/, e.g. 10.1111/nph.12345
-#   url:      Link to use if there is no DOI
-#   pdf:      /files/your-paper.pdf  (put the PDF in the files/ folder)
-#   preprint: Link to bioRxiv, etc.
-#   code:     Link to a GitHub repo
-#   data:     Link to Dryad, Zenodo, etc.
-#
-#
-# An asterisk (*) after a name marks an undergraduate mentee.
+#   details:  Volume, issue, pages
+#   status:   "In review", "Revisions submitted", "In preparation", etc.
+#   doi:      DOI only, e.g. 10.1002/ajb2.70004. Makes the title and an
+#             "Article" link point to the journal page.
+#   note:     Optional short note shown after the citation, e.g. "Open access"
+#   links:    Extra links, each with a label and url (preprint, data, code...)
 
 - title: "HGTScanner: Detecting horizontal gene transfer at the fine scale using whole organelle genomes"
   authors: "Cai, L. and R. O. Cohen"
   year: 2026
   venue: "Methods in Ecology and Evolution"
   doi: "10.1111/2041-210x.70419"
+  note: "Open access"
+  links:
+    - label: "Software (GitHub)"
+      url: "https://github.com/lmcai/HGTScanner"
+    - label: "Data (Zenodo)"
+      url: "https://doi.org/10.5281/zenodo.22033346"
 
 - title: "A reference genome and transcriptome of haustorial development in <i>Pedicularis groenlandica</i> reveal diverse trajectories of haustoria-associated gene evolution in parasitic plants"
   authors: "Cohen, R. O., A. Chomentowska, L. Cai, and D. A. R. Eaton"
   year: 2026
   venue: "Annals of Botany"
+  details: "138: 505–521"
   doi: "10.1093/aob/mcag089"
+  links:
+    # Add the bioRxiv preprint here once you have its link, e.g.:
+    # - label: "Preprint (bioRxiv)"
+    #   url: "https://doi.org/10.1101/XXXX"
+    - label: "Genome and sequence data (NCBI)"
+      url: "https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1461970"
+    - label: "Data (Dryad)"
+      url: "https://doi.org/10.5061/dryad.w3r228174"
 
 - title: "Phylogeny does not predict the outcome of heterospecific pollen–pistil interactions in a species-rich alpine plant community"
   authors: "Cohen, R. O., A. Cisse*, J. U. Jones, J. H. Williams, and D. A. R. Eaton"
   year: 2025
   venue: "American Journal of Botany"
+  details: "112: e70004"
   doi: "10.1002/ajb2.70004"
+  links:
+    - label: "Data (Dryad)"
+      url: "https://doi.org/10.5061/dryad.qv9s4mwqr"
 
 - title: "From recognition to neglect: Molecular and physiological responses to heterospecific pollen decay with evolutionary distance"
   authors: "Cohen, R. O., A. Masi*, S. M. Chin, J. H. Williams, and D. A. R. Eaton"
   venue: "Evolution"
   status: "Revisions submitted"
-  preprint: "https://doi.org/10.64898/2026.06.02.729600"
+  links:
+    - label: "Preprint (bioRxiv)"
+      url: "https://doi.org/10.64898/2026.06.02.729600"

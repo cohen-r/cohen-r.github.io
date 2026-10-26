@@ -1,0 +1,102 @@
+---
+layout: default
+title: About
+permalink: /
+---
+
+<figure class="hero-photo">
+  <img src="{{ '/assets/img/meadow.jpg' | relative_url }}" alt="Purple spikes of elephant’s head lousewort in a green subalpine meadow below snow-streaked peaks" width="1086" height="724">
+  <figcaption><i>Pedicularis groenlandica</i>, elephant’s head lousewort, in a subalpine meadow</figcaption>
+</figure>
+
+<section class="hero" aria-labelledby="hero-name">
+  <div class="hero-text">
+    <h1 id="hero-name">Rachel Cohen</h1>
+    <p class="role">Postdoctoral Associate, Cai lab, University of Florida<br>PhD, Ecology, Evolution and Environmental Biology, Columbia University</p>
+    <p class="lede">I study how flowering plants recognize other species, and how parasitism and pollination shape plant genomes.</p>
+    {% include contact.html %}
+  </div>
+
+  <nav class="cladogram" aria-label="Sections of this site">
+    <svg viewBox="0 0 340 196" role="img" aria-labelledby="clad-title">
+      <title id="clad-title">A small phylogenetic tree whose tips link to the sections of this site</title>
+      <g class="branches" fill="none" stroke-linecap="round">
+        <path pathLength="1" d="M8 140.4 H40" />
+        <path pathLength="1" d="M40 104.75 V176" />
+        <path pathLength="1" d="M40 104.75 H75" />
+        <path pathLength="1" d="M40 176 H180" />
+        <path pathLength="1" d="M75 71.5 V138" />
+        <path pathLength="1" d="M75 71.5 H110" />
+        <path pathLength="1" d="M75 138 H180" />
+        <path pathLength="1" d="M110 43 V100" />
+        <path pathLength="1" d="M110 43 H145" />
+        <path pathLength="1" d="M110 100 H180" />
+        <path pathLength="1" d="M145 24 V62" />
+        <path pathLength="1" d="M145 24 H180" />
+        <path pathLength="1" d="M145 62 H180" />
+      </g>
+      <a href="#research"><circle cx="180" cy="24" r="5"/><text x="194" y="29">Research</text></a>
+      <a href="#about"><circle cx="180" cy="62" r="5"/><text x="194" y="67">About me</text></a>
+      <a href="{{ '/publications/' | relative_url }}"><circle cx="180" cy="100" r="5"/><text x="194" y="105">Publications</text></a>
+      <a href="{{ '/teaching/' | relative_url }}"><circle cx="180" cy="138" r="5"/><text x="194" y="143">Teaching</text></a>
+      <a href="{{ '/cv/' | relative_url }}"><circle cx="180" cy="176" r="5"/><text x="194" y="181">CV</text></a>
+    </svg>
+  </nav>
+</section>
+
+<section id="research" class="prose" aria-labelledby="research-heading">
+  <h2 id="research-heading">Research</h2>
+  <p>Plants are constantly deciding how to respond to other species. A parasitic plant has to recognize a suitable host before it attaches, and a flower has to tell its own pollen apart from the pollen of its neighbors. My work asks how these recognition systems evolve and what they leave behind in plant genomes, combining fieldwork with comparative genomics, transcriptomics, and phylogenomics.</p>
+
+  <h3>Parasitic plant genomes</h3>
+  <p>Parasitic plants invade their hosts with a novel organ, the haustorium. To ask where the genes behind it came from, I assembled a chromosome-scale reference genome of <i>Pedicularis groenlandica</i> and sequenced transcriptomes across haustorial development, from first contact with a host to mature attachment. Of the 5,635 genes associated with haustoria, two thirds are also linked to pollen tubes and only one third to roots, suggesting that parasites borrowed heavily from the machinery pollen tubes use to grow through another plant’s tissue (<a href="https://doi.org/10.1093/aob/mcag089">Cohen et al. 2026, <i>Annals of Botany</i></a>).</p>
+</section>
+
+<figure class="paper-fig wide">
+  <a href="{{ '/assets/img/fig-haustoria-stages.jpg' | relative_url }}"><img src="{{ '/assets/img/fig-haustoria-stages.jpg' | relative_url }}" alt="Four panels showing Pedicularis groenlandica seedlings with an Arabidopsis host: roots 24 hours after host exposure, haustoria swelling, haustoria attached and penetrating the host, and mature field-collected haustoria" width="1800" height="907" loading="lazy"></a>
+  <figcaption>The four stages of haustorial development I sampled, from roots exposed to a host to mature haustoria collected in the field. From <a href="https://doi.org/10.1093/aob/mcag089">Cohen et al. 2026</a>, Fig. 1.</figcaption>
+</figure>
+
+<div class="fig-row">
+  <figure class="paper-fig">
+    <a href="{{ '/assets/img/fig-groenlandica-genome.jpg' | relative_url }}"><img src="{{ '/assets/img/fig-groenlandica-genome.jpg' | relative_url }}" alt="Photo of Pedicularis groenlandica, synteny plot comparing its eight chromosomes to P. cranolopha and Orobanche cumana, and a Hi-C contact map" width="1600" height="1732" loading="lazy"></a>
+    <figcaption>The <i>P. groenlandica</i> genome: eight chromosomes, highly rearranged relative to other Orobanchaceae. From <a href="https://doi.org/10.1093/aob/mcag089">Cohen et al. 2026</a>, Fig. 2.</figcaption>
+  </figure>
+  <div class="prose fig-side">
+    <p>With Liming Cai I also developed HGTScanner, a Python tool that detects horizontal gene transfer in organelle genomes and identifies the donor lineage. Applied to <i>Amborella</i>, it recovered known moss and algal transfers and uncovered DNA from the parasitic plant <i>Hachettea</i>, which shares its range in New Caledonia (<a href="https://doi.org/10.1111/2041-210x.70419">Cai and Cohen 2026, <i>Methods in Ecology and Evolution</i></a>).</p>
+    <p>As a postdoc in Liming Cai’s lab at the University of Florida, I am extending this work to comparative and population genomics of parasitic plants.</p>
+  </div>
+</div>
+
+<section class="prose">
+  <h3>Pollen recognition across species</h3>
+  <p>In species-rich meadows, flowers routinely receive pollen from their neighbors. Working at the Rocky Mountain Biological Laboratory, I crossed 11 co-flowering species and followed foreign pollen from the stigma toward the ovules. Heterospecific pollen germinated and grew the full length of the style even between species more than 100 million years diverged, and phylogenetic distance did not predict its success (<a href="https://doi.org/10.1002/ajb2.70004">Cohen et al. 2025, <i>American Journal of Botany</i></a>).</p>
+</section>
+
+<div class="fig-row reverse">
+  <figure class="paper-fig">
+    <a href="{{ '/assets/img/fig-pollen-assays.jpg' | relative_url }}"><img src="{{ '/assets/img/fig-pollen-assays.jpg' | relative_url }}" alt="Diagram of a pistil beside microscope images of pollen tube germination, pollen tubes in a style under fluorescence, and an ovary measurement, with photos of five Pedicularis species and six distant relatives" width="1600" height="1704" loading="lazy"></a>
+    <figcaption>Following foreign pollen at three stages, across five <i>Pedicularis</i> species and six distant relatives. From <a href="https://doi.org/10.1002/ajb2.70004">Cohen et al. 2025</a>, Fig. 1.</figcaption>
+  </figure>
+  <div class="prose fig-side">
+    <p>Pistils do respond differently to foreign pollen, though. Their transcriptional response to pollination fades steadily with evolutionary distance, and heterospecific pollen tubes grow more slowly than a species’ own, slowest of all among close relatives. Rather than actively rejecting foreign pollen, pistils seem to gradually stop supporting it (<a href="https://doi.org/10.64898/2026.06.02.729600">Cohen et al., preprint</a>).</p>
+    <p>My dissertation, <i>The Genetics of Recognition: Parasitism, Reproduction, and Genome Evolution in Flowering Plants</i>, received Columbia’s Don Jay Melnick Award in 2026.</p>
+  </div>
+</div>
+
+<section id="about" class="about" aria-labelledby="about-heading">
+  <h2 id="about-heading">About me</h2>
+  <div class="about-grid">
+    <img class="portrait" src="{{ '/assets/img/portrait.jpg' | relative_url }}" alt="Rachel Cohen smiling in a wildflower meadow with mountains behind her" width="724" height="1086" loading="lazy">
+    <div class="prose">
+      <p>I grew up in the San Francisco Bay Area and studied Biology at Amherst College, then did my PhD in the <a href="https://eaton-lab.org/">Eaton lab</a> at Columbia University. Fieldwork has taken me to the Colorado Rockies, the Maritime Alps of Italy, Bhutan, Costa Rica, Maryland, Massachusetts, and New York. Before graduate school I spent a year in Peru’s lowland Amazon as a program assistant for the School for Field Studies, supporting undergraduates in environmental science and biology. I now live in Gainesville, Florida.</p>
+      <p>Outside the lab I love cooking, playing Scrabble, and hiking.</p>
+      <div class="field-photos single">
+        <figure>
+          <img src="{{ '/assets/img/plant-press.jpg' | relative_url }}" alt="A lousewort specimen laid on newspaper in a wooden plant press on the grass, next to a wildflower field guide" width="1044" height="753" loading="lazy">
+          <figcaption>Pressing a voucher specimen</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>

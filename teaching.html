@@ -31,9 +31,27 @@ permalink: /teaching/
   </ul>
 </section>
 
+
+<section aria-labelledby="evals-heading">
+  <h2 id="evals-heading">Student evaluations</h2>
+  <p class="section-note">Overall teaching effectiveness, rated by students on a 5-point scale. Full reports are linked for each course.</p>
+  <ul class="eval-list">
+    {% for e in site.data.evaluations %}
+    <li class="eval">
+      <div class="eval-score"><span class="eval-num">{{ e.score }}</span><span class="eval-of">out of 5</span></div>
+      <div class="eval-body">
+        <h3>{{ e.course }}</h3>
+        <p class="meta">{{ e.role }}, {{ e.term }}. {{ e.responses }} students responded.{% if e.extra %} {{ e.extra }}.{% endif %} <a href="{{ e.pdf | relative_url }}">Full report (PDF)</a></p>
+        {% for q in e.quotes %}<blockquote>“{{ q }}”</blockquote>{% endfor %}
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+
 <section aria-labelledby="notebooks-heading">
   <h2 id="notebooks-heading">Teaching notebooks</h2>
-  <p class="section-note">Read any notebook online, or run it yourself in Binder (it can take a minute to start).</p>
+  <p class="section-note">Read any notebook here, or run it yourself in Binder, which opens a live copy in your browser (it can take a minute to start).</p>
 
   <ul class="notebook-list">
     {% for nb in site.data.notebooks %}
@@ -44,7 +62,7 @@ permalink: /teaching/
       <p>{{ nb.description }}</p>
       {% if nb.topics %}<p class="topics">Covers {{ nb.topics | join: ", " }}</p>{% endif %}
       <ul class="nb-links">
-        <li><a href="https://nbviewer.org/github/{{ site.github }}/{{ nb.repo }}/blob/{{ branch }}/{{ nb.file | uri_escape }}">Read online</a></li>
+        {% if nb.page %}<li><a href="{{ '/teaching/notebooks/' | append: nb.page | append: '.html' | relative_url }}">Read the notebook</a></li>{% endif %}
         {% if nb.binder_repo %}<li><a href="https://mybinder.org/v2/gh/{{ site.github }}/{{ nb.binder_repo }}/{{ branch }}?labpath={{ nb.binder_file | uri_escape }}">Run in Binder</a></li>{% endif %}
         <li><a href="https://github.com/{{ site.github }}/{{ nb.repo }}/blob/{{ branch }}/{{ nb.file | uri_escape }}">Source on GitHub</a></li>
       </ul>
@@ -68,15 +86,12 @@ permalink: /teaching/
 
 <section aria-labelledby="mentoring-heading">
   <h2 id="mentoring-heading">Mentoring</h2>
+  <figure class="inline-photo">
+    <img src="{{ '/assets/img/fieldwork-collecting.jpg' | relative_url }}" alt="A researcher in a sun hat kneeling among yellow wildflowers, collecting flowers into a bag" width="1086" height="724" loading="lazy">
+  </figure>
   <div class="prose">
     <p>From 2023 to 2026 I directed field, lab, and computational projects on pollen–pistil interactions at the Rocky Mountain Biological Laboratory and Columbia, supervising two undergraduates, a master’s student, and two community scientists. Undergraduate and master’s mentees are coauthors on two of the resulting papers. I also mentored students through the Barnard Summer Research Institute and Science Pathways Scholars Program, the RMBL Buddies Program, Científico Latino, and Columbia Women in Science, and chaired Undergraduate Outreach in Ecology and Evolution, a graduate student group that runs professional development workshops for Barnard and Columbia undergraduates.</p>
     <p>Before graduate school, I spent a year as a program assistant for the School for Field Studies in Peru’s lowland Amazon, leading field exercises and tutoring undergraduates on their independent projects, especially statistics.</p>
   </div>
 </section>
 
-<section aria-labelledby="files-heading">
-  <h2 id="files-heading">Course files</h2>
-  <ul class="compact-list">
-    <li><a href="{{ '/data/iris-data-dirty.csv' | relative_url }}">Iris dataset for EEEB G4050</a> <span class="meta">CSV</span></li>
-  </ul>
-</section>

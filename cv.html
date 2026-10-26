@@ -1,0 +1,231 @@
+---
+layout: default
+title: CV
+permalink: /cv/
+---
+
+<div class="cv">
+<header class="cv-header">
+  <h1>Curriculum vitae</h1>
+  <p class="cv-name">Dr. Rachel O. Cohen</p>
+  <p class="meta"><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+  <p><a class="button" href="{{ site.cv_pdf | relative_url }}">Download CV (PDF)</a></p>
+</header>
+
+<section aria-labelledby="cv-edu">
+  <h2 id="cv-edu">Education</h2>
+  <div class="cv-entry"><p class="cv-what"><strong>PhD</strong>, Ecology, Evolution, and Environmental Biology<br><span class="cv-where">Columbia University, New York, NY</span></p><p class="cv-when">May 2026</p></div>
+  <div class="cv-entry"><p class="cv-what"><strong>Master of Philosophy</strong>, Ecology, Evolution, and Environmental Biology<br><span class="cv-where">Columbia University, New York, NY</span></p><p class="cv-when">May 2023</p></div>
+  <div class="cv-entry"><p class="cv-what"><strong>Master of Arts</strong>, Ecology, Evolution, and Environmental Biology<br><span class="cv-where">Columbia University, New York, NY</span></p><p class="cv-when">May 2022</p></div>
+  <div class="cv-entry"><p class="cv-what"><strong>Bachelor of Arts</strong>, Biology (summa cum laude; Distinction)<br><span class="cv-where">Amherst College, Amherst, MA</span></p><p class="cv-when">May 2019</p></div>
+</section>
+
+<section aria-labelledby="cv-research">
+  <h2 id="cv-research">Research experience</h2>
+  <div class="cv-entry"><p class="cv-what"><strong>Postdoctoral Associate</strong>, Prof. Liming Cai Lab<br><span class="cv-where">University of Florida, Gainesville, FL</span></p><p class="cv-when">Aug 2026–present</p></div>
+  <ul class="cv-notes"><li>Topics: parasitic plant evolution, comparative genomics, parasitic plant population genetics, biotic interactions</li></ul>
+
+  <div class="cv-entry"><p class="cv-what"><strong>PhD Candidate</strong>, Prof. Deren Eaton Lab<br><span class="cv-where">Columbia University, New York, NY</span></p><p class="cv-when">Aug 2020–May 2026</p></div>
+  <ul class="cv-notes">
+    <li>Dissertation: “The Genetics of Recognition: Parasitism, Reproduction, and Genome Evolution in Flowering Plants”</li>
+    <li>Committee: Prof. Kevin Griffin (chair), Prof. Deren Eaton, Prof. Hilary Callahan, Prof. Andres Bendesky, Prof. Joseph Williams</li>
+    <li>Topics: biotic interactions, pollination biology, parasitic plants, comparative genomics and transcriptomics</li>
+    <li>Skills: genome assembly and annotation, differential gene expression quantification, DNA and RNA extractions, fluorescence microscopy, field pollinations and collections, semi-in vivo pollinations</li>
+  </ul>
+
+  <div class="cv-entry"><p class="cv-what"><strong>Undergraduate researcher</strong>, Prof. Michael Hood Lab<br><span class="cv-where">Amherst College, Amherst, MA</span></p><p class="cv-when">Jan 2018–Aug 2019</p></div>
+  <ul class="cv-notes"><li>Topics: coevolution, disease ecology, flowering plant transcriptomics</li></ul>
+
+  <div class="cv-entry"><p class="cv-what"><strong>REU Intern</strong>, Dr. Melissa McCormick Lab<br><span class="cv-where">Smithsonian Environmental Research Center, Edgewater, MD</span></p><p class="cv-when">May–Aug 2018</p></div>
+  <ul class="cv-notes"><li>Topics: coevolution, symbioses in flowering plants, mycology, genetics</li></ul>
+
+  <div class="cv-entry"><p class="cv-what"><strong>Undergraduate researcher</strong>, Dr. Purna Chettri Research Group<br><span class="cv-where">School for Field Studies Center, Paro, Bhutan</span></p><p class="cv-when">Aug–Dec 2017</p></div>
+  <ul class="cv-notes"><li>Topics: forestry, phenology, alpine ecology</li></ul>
+</section>
+
+<section aria-labelledby="cv-interests">
+  <h2 id="cv-interests">Research interests</h2>
+  <p>Plant–plant interactions and coevolution; heterospecific pollination and pollination biology; plant parasitism; comparative phylogenomics, genomics, and functional transcriptomics; community ecology.</p>
+</section>
+
+<section aria-labelledby="cv-pubs">
+  <h2 id="cv-pubs">Publications</h2>
+  <p class="section-note">Bold: self. Asterisk (*): undergraduate mentee.</p>
+  {% assign pubs = site.data.publications | sort: "year" | reverse %}
+  <ol class="pub-list">
+    {% for p in pubs %}{% unless p.status %}{% include pub.html p=p %}{% endunless %}{% endfor %}
+  </ol>
+  <h3 class="subhead">Manuscripts under review</h3>
+  <ol class="pub-list">
+    {% for p in site.data.publications %}{% if p.status %}{% include pub.html p=p %}{% endif %}{% endfor %}
+  </ol>
+</section>
+
+<section aria-labelledby="cv-awards">
+  <h2 id="cv-awards">Grants and awards</h2>
+  <div class="cv-entry"><p class="cv-what"><strong>Don Jay Melnick Award</strong>, Columbia Department of Ecology, Evolution, and Environmental Biology. Recognizes outstanding dissertation work and other departmental activities.</p><p class="cv-when">2026</p></div>
+  <div class="cv-entry"><p class="cv-what"><strong>Graduate Research Award</strong>, Botanical Society of America, $1,500</p><p class="cv-when">2025</p></div>
+  <div class="cv-entry"><p class="cv-what"><strong>Graduate Student Research Award</strong>, Society for Systematic Biology, $3,000</p><p class="cv-when">2024</p></div>
+  <div class="cv-entry"><p class="cv-what"><strong>John Woodruff Simpson Fellowship</strong>, Amherst College Fellowships, for the study of evolutionary biology in graduate school, $7,000 each year</p><p class="cv-when">2022–2024</p></div>
+  <div class="cv-entry"><p class="cv-what"><strong>Graduate Research Grant</strong>, Rocky Mountain Biological Laboratory, $500</p><p class="cv-when">2022</p></div>
+  <div class="cv-entry"><p class="cv-what"><strong>Annual Grant</strong>, New York Flora Association, $1,500</p><p class="cv-when">2021</p></div>
+  <div class="cv-entry"><p class="cv-what"><strong>Lloyd I. Rosenblum Memorial Fellowship</strong>, Amherst College Fellowships, for the graduate study of plant or evolutionary biology, $10,000</p><p class="cv-when">2020–2021</p></div>
+  <div class="cv-entry"><p class="cv-what"><strong>Oscar E. Schotté Award</strong>, Amherst College, for the best independent work in biology in the senior class, $3,500</p><p class="cv-when">2019</p></div>
+  <div class="cv-entry"><p class="cv-what"><strong>Beckman Scholar</strong>, Beckman Foundation, $21,000</p><p class="cv-when">2018</p></div>
+  <div class="cv-entry"><p class="cv-what"><strong>James R. Elster Award</strong>, Amherst College, summer research support, $1,200</p><p class="cv-when">2018</p></div>
+  <div class="cv-entry"><p class="cv-what"><strong>Sawyer Prize</strong>, Amherst College, to the second-year student showing the most promise as a student of biology, $1,000</p><p class="cv-when">2017</p></div>
+</section>
+
+<section aria-labelledby="cv-teaching">
+  <h2 id="cv-teaching">Teaching experience</h2>
+  <div class="cv-entry"><p class="cv-what"><strong>Instructor</strong>, Columbia Pre-College Programs, New York, NY<br><span class="cv-where">Environmental Studies: Designing a Sustainable Future</span></p><p class="cv-when">Jun–Jul 2026</p></div>
+  <ul class="cv-notes">
+    <li>Sole instructor of a three-week college-level course for high school students on biodiversity loss, climate change, and sustainable solutions</li>
+    <li>Wrote the syllabus, developed lesson plans and activities, and organized field trips</li>
+  </ul>
+  <div class="cv-entry"><p class="cv-what"><strong>Columbia GSAS Teaching Scholar</strong>, New York, NY<br><span class="cv-where">Biological Interactions in a Changing World</span></p><p class="cv-when">Aug 2025–present</p></div>
+  <ul class="cv-notes">
+    <li>Selected by the Graduate School of Arts and Sciences and the E3B Department to be an instructor of record based on teaching experience and a self-designed, learner-focused syllabus</li>
+    <li>Sole instructor of record in Spring 2026, including all course materials (lecture slides, examinations, interactive coding notebooks), grading, and assessment</li>
+  </ul>
+  <div class="cv-entry"><p class="cv-what"><strong>Teaching Fellow</strong>, Columbia University</p><p class="cv-when"></p></div>
+  <ul class="cv-notes">
+    <li>Statistical Modeling for Ecology and Evolution, Fall 2022</li>
+    <li>Fundamentals of Evolution, Fall 2021</li>
+    <li>Introduction to Statistics for Ecology and Evolution, Fall 2020</li>
+  </ul>
+  <div class="cv-entry"><p class="cv-what"><strong>Teaching Assistant</strong>, Amherst College</p><p class="cv-when"></p></div>
+  <ul class="cv-notes">
+    <li>Microbiology, Spring 2019</li>
+    <li>Plant Form, Function, and Diversity, Fall 2018</li>
+    <li>Introduction to Biology (Organism, Ecology, Evolution), Spring 2017</li>
+  </ul>
+</section>
+
+<section aria-labelledby="cv-fellowships">
+  <h2 id="cv-fellowships">Fellowships and professional experience</h2>
+  <div class="cv-entry"><p class="cv-what"><strong>CURIOS Higher Education Fellow</strong>, Columbia Provost’s Office, New York, NY</p><p class="cv-when">Sep 2024–present</p></div>
+  <ul class="cv-notes">
+    <li>CURIOS (Course-Based Undergraduate Research-Integrated Original Studies) is a provost-funded initiative to bring authentic research experiences into STEM courses</li>
+    <li>Work with faculty across STEM disciplines to create and implement research-based activities and lessons in undergraduate courses</li>
+    <li>Planned and hosted faculty workshops, created the IRB protocol for studying the initiative, and supported the core faculty team</li>
+  </ul>
+  <div class="cv-entry"><p class="cv-what"><strong>Writing Consultant</strong>, Columbia GSAS Writing Studio, New York, NY</p><p class="cv-when">Aug 2025–Jun 2026</p></div>
+  <ul class="cv-notes">
+    <li>Ran weekly group writing sessions for PhD students writing dissertations and MA students writing theses</li>
+    <li>Led one-on-one consultations on prospectuses, dissertation chapters, master’s theses, and fellowship and PhD applications</li>
+    <li>Helped design and run writing retreats for Writing Center staff and graduate students</li>
+  </ul>
+  <div class="cv-entry"><p class="cv-what"><strong>Senior Lead Teaching Fellow</strong>, Columbia Center for Teaching and Learning, New York, NY</p><p class="cv-when">May 2024–Jun 2025</p></div>
+  <ul class="cv-notes">
+    <li>Mentored and supervised five Lead Teaching Fellows from other departments, advising on department-level pedagogy workshops</li>
+    <li>Ran a two-day Learning Community for graduate student instructors on using technology to promote active learning</li>
+  </ul>
+  <div class="cv-entry"><p class="cv-what"><strong>Fellow in Academic Administration</strong>, Columbia Center for Teaching and Learning, New York, NY</p><p class="cv-when">Aug–Dec 2022</p></div>
+  <ul class="cv-notes">
+    <li>Evaluated the reach and success of the Teaching Development Program by building and analyzing datasets of participants</li>
+    <li>Presented findings and created written resources the Center still uses to promote the program</li>
+  </ul>
+  <div class="cv-entry"><p class="cv-what"><strong>Lead Teaching Fellow</strong>, Columbia Center for Teaching and Learning, New York, NY</p><p class="cv-when">Jul 2021–May 2022</p></div>
+  <ul class="cv-notes">
+    <li>Center representative and liaison for the E3B Department</li>
+    <li>Hosted pedagogy events for E3B teaching fellows on science communication in teaching (Fall 2021) and on running office hours (Spring 2022)</li>
+  </ul>
+  <div class="cv-entry"><p class="cv-what"><strong>Program Assistant</strong>, The School for Field Studies, Iquitos region, Perú</p><p class="cv-when">Aug 2019–May 2020</p></div>
+  <ul class="cv-notes">
+    <li>Oversaw daily activities and safety of undergraduates in a semester study abroad program at the Center for Amazon Studies</li>
+    <li>Assisted with academics and daily field lectures, and tutored students on independent projects, particularly statistics</li>
+  </ul>
+</section>
+
+<section aria-labelledby="cv-mentor">
+  <h2 id="cv-mentor">Mentorship and outreach</h2>
+  <div class="cv-entry"><p class="cv-what"><strong>Mentorship and outreach: parasitism and pollination in alpine flowers</strong></p><p class="cv-when">May 2023–May 2026</p></div>
+  <ul class="cv-notes">
+    <li>Directed projects on pollen tube growth after interspecific pollen exchange over three field seasons, overseeing fieldwork at the Rocky Mountain Biological Laboratory and lab and computational work at Columbia</li>
+    <li>Supervised two undergraduate projects (2023–2026), two community scientists at RMBL (an adult volunteer and a high school student, July 2025), and a master’s student (July 2023)</li>
+    <li>Resulted in publications with undergraduate and master’s student coauthors (Cohen et al. 2025, <cite>American Journal of Botany</cite>; Cohen et al. 2026, <cite>Annals of Botany</cite>)</li>
+    <li>Mentor through the Barnard College Summer Research Institute and Science Pathways Scholars Program, May–Aug 2023 and May–Aug 2024</li>
+  </ul>
+  <div class="cv-entry"><p class="cv-what"><strong>Committee Chair</strong>, Undergraduate Outreach in Ecology and Evolution</p><p class="cv-when">Oct 2020–May 2026</p></div>
+  <ul class="cv-notes">
+    <li>Graduate student group making careers in ecology and evolution more accessible to Barnard and Columbia undergraduates</li>
+    <li>Organized professional development workshops on CVs, undergraduate research, and graduate school applications, in partnership with Columbia and Barnard faculty groups, introductory science courses, and student clubs</li>
+  </ul>
+  <div class="cv-entry"><p class="cv-what"><strong>Mentor</strong>, Ovary to pollen tube signaling during pollination</p><p class="cv-when">Mar 2021–Jun 2024</p></div>
+  <ul class="cv-notes"><li>Mentored a New York City public high school student’s independent research project on ovary-based signaling in pollen tube growth, meeting weekly and teaching lab and microscopy techniques</li></ul>
+  <div class="cv-entry"><p class="cv-what"><strong>Mentor</strong>, Científico Latino Graduate Student Engagement and Community program</p><p class="cv-when">Aug 2023–Jun 2024</p></div>
+  <ul class="cv-notes"><li>Organized monthly small-group mentorship meetings on navigating the first year of graduate school</li></ul>
+  <div class="cv-entry"><p class="cv-what"><strong>Mentor</strong>, RMBL Buddies Program</p><p class="cv-when">Summers 2022, 2023</p></div>
+  <ul class="cv-notes"><li>Mentored three REU interns: weekly meetings, CV review, graduate school search and applications, conference and poster advice</li></ul>
+  <div class="cv-entry"><p class="cv-what"><strong>Mentor</strong>, Columbia Women in Science</p><p class="cv-when">Oct 2020–May 2023</p></div>
+  <ul class="cv-notes"><li>Mentored three undergraduates on internship and graduate school applications, coursework, and getting involved in research</li></ul>
+  <div class="cv-entry"><p class="cv-what"><strong>Mentor</strong>, Amherst Women in Science, Amherst, MA</p><p class="cv-when">Jan 2018–May 2019</p></div>
+  <div class="cv-entry"><p class="cv-what"><strong>Community engagement leader</strong>, A Better Chance Tutoring Program</p><p class="cv-when">Sep 2015–May 2019</p></div>
+  <ul class="cv-notes"><li>Managed 10–15 college tutors and tutored high school students in all subjects, particularly biology and Spanish</li></ul>
+</section>
+
+<section aria-labelledby="cv-talks">
+  <h2 id="cv-talks">Presentations</h2>
+  <h3 class="subhead">Invited</h3>
+  <ul class="cv-list">
+    <li>“The Evolution of Parasitism in the Flowering Plants.” New York Botanical Garden, New York, NY. November 2026.</li>
+    <li>“The Evolution of Parasitism in the Flowering Plants.” Amherst College Biology Department, Amherst, MA. November 2026.</li>
+    <li>“The Genetics of Recognition: Parasitism, Reproduction, and Genome Evolution in Flowering Plants.” Evolution Seminar, University of Florida Biology, Gainesville, FL. September 2026.</li>
+  </ul>
+  <h3 class="subhead">Conference</h3>
+  <ul class="cv-list">
+    <li>“Evaluating horizontal gene transfer in parasitic plants using a novel Orobanchaceae genome dataset.” Evolution, June 2025. Oral presentation.</li>
+    <li>“Equal access opportunity: phylogeny does not predict the outcome of heterospecific pollen–pistil interactions in a species-rich alpine plant community.” International Botanical Congress, Madrid, Spain, July 2024. Oral presentation.</li>
+    <li>“Heterospecific pollen–pistil interactions elicit novel transcriptomic response relative to conspecific interactions.” International Botanical Congress, Madrid, Spain, July 2024. Poster.</li>
+    <li>“A reference- and alignment-free method for assessing genotype-by-phenotype associations.” Botany, July 2021, virtual. Poster.</li>
+    <li>“A reference- and alignment-free method for assessing genotype-by-phenotype associations.” Evolution, June 2021, virtual. Poster.</li>
+    <li>“Coevolution as the driver of specificity in host–pathogen interactions.” Beckman Symposium, Irvine, CA, August 2019. Poster.</li>
+    <li>“Coevolution as the driver of specificity in host–pathogen interactions.” Evolution, Providence, RI, 2019. Poster.</li>
+    <li>“Coevolution as the driver of specificity in host–pathogen interactions.” Scientista Symposium, Boston, MA, April 2019. Poster.</li>
+  </ul>
+  <h3 class="subhead">Departmental</h3>
+  <ul class="cv-list">
+    <li>“The Genetics of Recognition: Parasitism, Reproduction, and Genome Evolution in Flowering Plants.” PhD exit talk, Columbia E3B, April 2026.</li>
+    <li>“Building Inclusive Fieldwork Practices in Ecology and Evolution.” Columbia E3B Seminar, September 2023.</li>
+    <li>“Quantification of Heterospecific Pollen Tube Growth in an Alpine Plant Community.” Columbia E3B Seminar, September 2022.</li>
+  </ul>
+</section>
+
+<section aria-labelledby="cv-service">
+  <h2 id="cv-service">Peer review</h2>
+  <p><cite>Annals of Botany</cite>, <cite>American Journal of Botany</cite>, <cite>International Journal of Plant Sciences</cite></p>
+</section>
+
+<section aria-labelledby="cv-workshops">
+  <h2 id="cv-workshops">Workshops</h2>
+  <ul class="cv-list">
+    <li>Phylogenomics Software School, Evolution, Athens, GA, June 2025</li>
+    <li>Phylotranscriptomics Workshop, Botany, Anchorage, AK, July 2022</li>
+  </ul>
+</section>
+
+<section aria-labelledby="cv-field">
+  <h2 id="cv-field">Field experience</h2>
+  <div class="cv-entry"><p class="cv-what"><strong>Colorado, USA</strong>, Rocky Mountain Biological Laboratory</p><p class="cv-when">2022, 2023, 2025</p></div>
+  <ul class="cv-notes">
+    <li>Principal investigator over three summers; supervised two field assistants (2023) and two community scientist volunteers (2025)</li>
+    <li>More than 3,000 experimental field cross-pollinations, plant collections, RNA and DNA sampling</li>
+  </ul>
+  <div class="cv-entry"><p class="cv-what"><strong>New York, USA</strong></p><p class="cv-when">Apr–Aug 2021</p></div>
+  <ul class="cv-notes"><li>Flower collections for pollination studies in <i>Pedicularis canadensis</i> and <i>P. lanceolata</i></li></ul>
+  <div class="cv-entry"><p class="cv-what"><strong>Iquitos, Perú</strong></p><p class="cv-when">Aug 2019–May 2020</p></div>
+  <ul class="cv-notes"><li>Oversaw undergraduate fieldwork; forestry measurements and interviews conducted in Spanish</li></ul>
+  <div class="cv-entry"><p class="cv-what"><strong>Maritime Alps, Italy</strong></p><p class="cv-when">Jul 2018, Jul 2019</p></div>
+  <ul class="cv-notes"><li>Disease ecology of carnations infected with fungal pathogens: transplant experiments, flower collections, pollinator arrays and observations</li></ul>
+  <div class="cv-entry"><p class="cv-what"><strong>Paro, Bhutan</strong></p><p class="cv-when">Aug–Dec 2017</p></div>
+  <ul class="cv-notes"><li>Forestry, bird surveys, flowering plant surveys, interviews</li></ul>
+  <div class="cv-entry"><p class="cv-what"><strong>Costa Rica</strong>, Amherst College Biology field course</p><p class="cv-when">Jan 2017</p></div>
+  <ul class="cv-notes"><li>Plant and insect identification, biodiversity studies</li></ul>
+</section>
+
+<section aria-labelledby="cv-skills">
+  <h2 id="cv-skills">Skills</h2>
+  <p>Coding: bash, Python, R. Languages: Spanish (conversational).</p>
+</section>
+</div>

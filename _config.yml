@@ -9,7 +9,7 @@ baseurl: ""
 author:
   name: Rachel Cohen
   # Every way your name appears in author lists. Each is bolded on the
-  # Publications page.
+  # Publications and CV pages.
   citation_names:
     - "Cohen, R. O."
     - "R. O. Cohen"
@@ -18,8 +18,8 @@ author:
 email: "cohen.rachel@ufl.edu"
 github: cohen-r
 google_scholar: ""   # e.g. https://scholar.google.com/citations?user=XXXX
-orcid: ""            # e.g. 0000-0000-0000-0000
-cv: "/files/Cohen_CV.pdf"   # replace the PDF in files/ when you update your CV
+orcid: "0009-0004-6669-9907"
+cv_pdf: "/files/Cohen_CV.pdf"   # replace the PDF in files/ when you update your CV
 
 nav:
   - title: About
@@ -28,6 +28,8 @@ nav:
     url: /publications/
   - title: Teaching
     url: /teaching/
+  - title: CV
+    url: /cv/
 
 plugins:
   - jekyll-seo-tag

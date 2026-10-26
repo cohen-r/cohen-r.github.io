@@ -1,14 +1,12 @@
+{% assign authors = include.p.authors %}{% for n in site.author.citation_names %}{% capture bold_name %}<strong>{{ n }}</strong>{% endcapture %}{% assign authors = authors | replace: n, bold_name %}{% endfor %}
 <li class="pub">
   <p class="pub-title">{% if include.p.doi %}<a href="https://doi.org/{{ include.p.doi }}">{{ include.p.title }}</a>{% elsif include.p.url %}<a href="{{ include.p.url }}">{{ include.p.title }}</a>{% else %}{{ include.p.title }}{% endif %}</p>
-  {% assign authors = include.p.authors %}{% for n in site.author.citation_names %}{% capture bold_name %}<strong>{{ n }}</strong>{% endcapture %}{% assign authors = authors | replace: n, bold_name %}{% endfor %}
   <p class="pub-authors">{{ authors }}</p>
-  <p class="pub-venue">{% if include.p.venue %}<cite>{{ include.p.venue }}</cite>{% endif %}{% if include.p.details %}, {{ include.p.details }}{% endif %}{% if include.p.status %}{% if include.p.venue %}. {% endif %}{{ include.p.status }}{% endif %}</p>
-  {% if include.p.pdf or include.p.preprint or include.p.code or include.p.data %}
+  <p class="pub-venue">{% if include.p.venue %}<cite>{{ include.p.venue }}</cite>{% endif %}{% if include.p.details %} {{ include.p.details }}{% endif %}{% if include.p.status %}{% if include.p.venue %}, {% endif %}{{ include.p.status }}{% endif %}{% if include.p.note %}<span class="pub-note">{{ include.p.note }}</span>{% endif %}</p>
+  {% if include.p.doi or include.p.links %}
   <ul class="pub-links">
-    {% if include.p.pdf %}<li><a href="{{ include.p.pdf | relative_url }}">PDF</a></li>{% endif %}
-    {% if include.p.preprint %}<li><a href="{{ include.p.preprint }}">Preprint</a></li>{% endif %}
-    {% if include.p.code %}<li><a href="{{ include.p.code }}">Code</a></li>{% endif %}
-    {% if include.p.data %}<li><a href="{{ include.p.data }}">Data</a></li>{% endif %}
+    {% if include.p.doi %}<li><a href="https://doi.org/{{ include.p.doi }}">Article ({{ include.p.venue }})</a></li>{% endif %}
+    {% for l in include.p.links %}<li><a href="{{ l.url }}">{{ l.label }}</a></li>{% endfor %}
   </ul>
   {% endif %}
 </li>

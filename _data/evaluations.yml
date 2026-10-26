@@ -1,0 +1,36 @@
+# Student evaluations, shown on the Teaching page.
+#   score:     overall teaching effectiveness (mean, out of 5)
+#   responses: number of students who answered that question / enrolled
+#   pdf:       the full evaluation report in files/evaluations/
+#   quotes:    short excerpts from student comments, quoted exactly
+
+- course: "Biological Interactions in a Changing World"
+  role: "Instructor of record"
+  term: "Spring 2026"
+  score: "5.00"
+  responses: "5 of 5"
+  extra: "Overall course rating 4.80 / 5"
+  pdf: "/files/evaluations/Cohen_eval_BiologicalInteractions_Spring2026.pdf"
+  quotes:
+    - "Dr. Cohen was by far one of the most thoughtful, critical, and communicative lecturers throughout the STEM courses I’ve taken at Columbia."
+    - "I never would have believed I’d understand molecular phylogenetics by the end of this semester. Yet, here I am, confidently navigating complex research papers on biological interactions."
+    - "…generating enthusiasm, breaking down complex concepts into simple-to-understand examples, periodic checking-in on student understanding, adaptive to student feedback, high-quality detailed feedback on assignments…"
+
+- course: "Statistical Modeling for Ecology and Evolution"
+  role: "Teaching fellow"
+  term: "Fall 2022"
+  score: "4.69"
+  responses: "13 of 19"
+  pdf: "/files/evaluations/Cohen_eval_StatisticalModeling_Fall2022.pdf"
+  quotes:
+    - "She does a great job of meeting students where they are at and guiding them to bridge knowledge gaps."
+    - "She is obviously incredibly skilled at R and statistical analysis but can also break down the concepts into a more interpretable way."
+
+- course: "Fundamentals of Evolution"
+  role: "Teaching fellow"
+  term: "Fall 2021"
+  score: "4.55"
+  responses: "20 of 27"
+  pdf: "/files/evaluations/Cohen_eval_FundamentalsOfEvolution_Fall2021.pdf"
+  quotes:
+    - "She was able to make very complicated information easy to understand. Her presentation style is conversational and engaging…"

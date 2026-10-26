@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&family=Public+Sans:wght@400;500;600&display=swap">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M4 18h8M12 8v20M12 8h16M12 28h16M20 8v10M20 18h8' fill='none' stroke='%23A62B63' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M4 18h8M12 8v20M12 8h16M12 28h16M20 8v10M20 18h8' fill='none' stroke='%232f7d32' stroke-width='3' stroke-linecap='round'/%3E%3Ccircle cx='28' cy='8' r='3' fill='%23b8336a'/%3E%3C/svg%3E">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -21,9 +21,6 @@
           {% for item in site.nav %}
           <li><a href="{{ item.url | relative_url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.title }}</a></li>
           {% endfor %}
-          {% if site.cv != "" and site.cv %}
-          <li><a href="{{ site.cv | relative_url }}">CV</a></li>
-          {% endif %}
         </ul>
       </nav>
     </div>
