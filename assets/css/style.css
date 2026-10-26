@@ -49,6 +49,7 @@ html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
 
 body {
   margin: 0;
+  overflow-x: clip;
   background: var(--paper);
   color: var(--ink);
   font-family: var(--serif);
@@ -147,7 +148,8 @@ a:focus-visible,
 
 /* Main content */
 main {
-  padding-top: 2.5rem;
+  --main-pad: 2.5rem;
+  padding-top: var(--main-pad);
   padding-bottom: 4rem;
 }
 main > *:not(.hero):not(.hero-photo):not(.fig-row):not(.paper-fig):not(.about):not(.cv):not(.news) { max-width: var(--measure); }
@@ -180,27 +182,25 @@ figcaption {
   line-height: 1.5;
 }
 
-/* Home: meadow photo */
+/* Home: meadow photo, full width across the top, uncropped */
 .hero-photo {
-  margin: 0;
   position: relative;
-  border-radius: var(--radius);
-  overflow: hidden;
+  width: 100vw;
+  margin: calc(-1 * var(--main-pad)) 0 0 calc(50% - 50vw);
   background: var(--meadow);
 }
 .hero-photo img {
   width: 100%;
-  height: clamp(14rem, 38vw, 26rem);
-  object-fit: cover;
-  object-position: center 62%;
+  height: auto;
+  aspect-ratio: 1086 / 724;
 }
 .hero-photo figcaption {
   position: absolute;
-  right: 0.75rem;
-  top: 0.65rem;
+  right: 1rem;
+  bottom: 0.9rem;
   background: rgba(255, 255, 255, 0.88);
   color: #1d3322;
-  padding: 0.2rem 0.6rem;
+  padding: 0.2rem 0.65rem;
   border-radius: 999px;
   font-size: 0.8rem;
 }
@@ -575,7 +575,7 @@ blockquote {
 }
 @media (max-width: 44rem) {
   body { font-size: 1.0625rem; }
-  main { padding-top: 1.25rem; }
+  main { --main-pad: 1.25rem; }
   .hero {
     grid-template-columns: 1fr;
     margin: 1rem 0 0;
