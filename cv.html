@@ -22,7 +22,7 @@ permalink: /cv/
 
 <section aria-labelledby="cv-research">
   <h2 id="cv-research">Research experience</h2>
-  <div class="cv-entry"><p class="cv-what"><strong>Postdoctoral Associate</strong>, Prof. Liming Cai Lab<br><span class="cv-where">University of Florida, Gainesville, FL</span></p><p class="cv-when">Aug 2026–present</p></div>
+  <div class="cv-entry"><p class="cv-what"><strong>Postdoctoral Associate</strong>, <a href="https://lmcai.weebly.com/">Prof. Liming Cai Lab</a><br><span class="cv-where">University of Florida, Gainesville, FL</span></p><p class="cv-when">Aug 2026–present</p></div>
   <ul class="cv-notes"><li>Topics: parasitic plant evolution, comparative genomics, parasitic plant population genetics, biotic interactions</li></ul>
 
   <div class="cv-entry"><p class="cv-what"><strong>PhD Candidate</strong>, Prof. Deren Eaton Lab<br><span class="cv-where">Columbia University, New York, NY</span></p><p class="cv-when">Aug 2020–May 2026</p></div>
@@ -189,6 +189,13 @@ permalink: /cv/
     <li>“The Genetics of Recognition: Parasitism, Reproduction, and Genome Evolution in Flowering Plants.” PhD exit talk, Columbia E3B, April 2026.</li>
     <li>“Building Inclusive Fieldwork Practices in Ecology and Evolution.” Columbia E3B Seminar, September 2023.</li>
     <li>“Quantification of Heterospecific Pollen Tube Growth in an Alpine Plant Community.” Columbia E3B Seminar, September 2022.</li>
+  </ul>
+</section>
+
+<section aria-labelledby="cv-media">
+  <h2 id="cv-media">Media coverage</h2>
+  <ul class="cv-list">
+    {% for n in site.data.news %}<li><a href="{{ n.url }}">{{ n.title }}</a>. {{ n.outlet }}, {{ n.date }}.</li>{% endfor %}
   </ul>
 </section>
 

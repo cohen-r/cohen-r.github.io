@@ -1,0 +1,12 @@
+# News stories about your work, newest first. Shown on the home page and CV.
+# Replace each title with the story's actual headline.
+
+- title: "Feature on horizontal gene transfer in plants"   # TODO: paste exact headline
+  outlet: "University of Florida News"
+  date: "October 2026"
+  url: "https://news.ufl.edu/2026/10/plant-horizontal-gene-transfer/"
+
+- title: "Science Stories, November 2025"                 # TODO: paste exact headline
+  outlet: "Rocky Mountain Biological Laboratory"
+  date: "November 2025"
+  url: "https://www.rmbl.org/article/science-stories-november-2025/"

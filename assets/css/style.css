@@ -150,7 +150,8 @@ main {
   padding-top: 2.5rem;
   padding-bottom: 4rem;
 }
-main > *:not(.hero):not(.hero-photo):not(.fig-row):not(.paper-fig):not(.about):not(.cv) { max-width: var(--measure); }
+main > *:not(.hero):not(.hero-photo):not(.fig-row):not(.paper-fig):not(.about):not(.cv):not(.news) { max-width: var(--measure); }
+main > .news { max-width: var(--measure); }
 
 h1, h2, h3 {
   font-family: var(--serif);
@@ -291,7 +292,7 @@ figcaption {
   .cladogram circle,
   .cladogram text {
     opacity: 0;
-    animation: appear 0.4s ease-out 1.65s forwards;
+    animation: appear 0.4s ease-out 1.35s forwards;
   }
 }
 @keyframes grow { to { stroke-dashoffset: 0; } }
@@ -322,6 +323,20 @@ figcaption {
 .fig-row .paper-fig { margin: 0; }
 .fig-row.reverse .paper-fig { order: 2; }
 .fig-side { max-width: var(--measure); }
+
+/* News */
+.news-list { list-style: none; margin: 0; padding: 0; }
+.news-list li {
+  display: flex;
+  flex-direction: column;
+  padding: 0.85rem 1.1rem;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-left: 5px solid var(--sun);
+  border-radius: 10px;
+}
+.news-list li + li { margin-top: 0.75rem; }
+.news-list a { font-weight: 600; }
 
 /* About */
 .about { margin-top: 3.5rem; }
