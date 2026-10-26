@@ -1,0 +1,57 @@
+# Teaching notebooks.
+#   repo / file:               where the notebook is read online and its source
+#   binder_repo / binder_file: a repo with an environment.yml (and any data)
+#                              so Binder can run it; leave out to hide the
+#                              "Run in Binder" link
+#   branch:                    defaults to main
+
+- title: "Lotka–Volterra models of predator–prey and competitive interactions"
+  context: "Biological Interactions in a Changing World, Spring 2026 (in-class assignment 1)"
+  description: >-
+    Students change model parameters and watch population dynamics respond,
+    working through 22 short questions and a closing reflection. Written for
+    students with no coding experience, as a first look at how ecologists
+    model interactions.
+  topics: [predator–prey dynamics, competition, differential equations]
+  repo: teaching_coding_notebooks
+  file: Lotka-volterra.ipynb
+  binder_repo: bio_interactions_lotka_volterra
+  binder_file: Lotka-volterra.ipynb
+
+- title: "Modeling ecological communities with joint species distribution models"
+  context: "Biological Interactions in a Changing World, Spring 2026 (in-class assignment 2)"
+  description: >-
+    Using real occurrence data for white-tailed deer and coyotes in the
+    northeastern US, students fit single-species and joint species
+    distribution models, then interpret their results alongside CDC data on
+    Lyme disease.
+  topics: [species distribution models, JSDMs, real-world data, disease ecology]
+  repo: teaching_coding_notebooks
+  file: JSDMs.ipynb
+  binder_repo: biointeractions_jsdm
+  binder_file: JSDMs.ipynb
+
+- title: "Phylogenetics: gene trees, species trees, and incomplete lineage sorting"
+  context: "Fundamentals of Evolution, Fall 2021"
+  description: >-
+    An introduction to Jupyter followed by coalescent simulations with
+    toytree and ipcoal. Students see how effective population size, mutation
+    rate, and admixture produce disagreement between gene trees and the
+    species tree.
+  topics: [phylogenetics, coalescent simulation, introgression]
+  repo: teaching_coding_notebooks
+  file: "phylogenetics (4).ipynb"
+  binder_repo: fundamentals-notebooks
+  binder_file: phylogenetics.ipynb
+
+- title: "Teaching inheritance with Punnett squares"
+  context: "Learning Community workshop on technology for active learning, Columbia Center for Teaching and Learning, 2024"
+  description: >-
+    A demonstration lesson for graduate student instructors, showing how a
+    notebook can take students with no coding background from running their
+    first cell to calculating offspring genotype frequencies.
+  topics: [Mendelian inheritance, intro to coding]
+  repo: teaching_coding_notebooks
+  file: LC_TeachingAboutInheritance.ipynb
+  binder_repo: ctrl_alt_teach_lc_nb
+  binder_file: LC_TeachingAboutInheritance.ipynb

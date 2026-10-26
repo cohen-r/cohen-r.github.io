@@ -1,0 +1,45 @@
+# Your publications. Each entry starts with "- title:".
+# Published papers are grouped by year, newest first.
+# Anything with a "status" goes under "In review and in preparation".
+#
+# Fields (only title, authors, and year are required):
+#   title:    Paper title (wrap species names in <i></i> to italicize them)
+#   authors:  Author list as it appears in the citation. Your name is bolded
+#             automatically if it matches author.citation_names in _config.yml.
+#   year:     Publication year as a number, e.g. 2025 (leave out for in-prep work)
+#   venue:    Journal name
+#   details:  Volume, issue, pages, e.g. "112(4): e70012"
+#   status:   "In review", "In revision", "In preparation", etc.
+#   doi:      DOI only, without https://doi.org/, e.g. 10.1111/nph.12345
+#   url:      Link to use if there is no DOI
+#   pdf:      /files/your-paper.pdf  (put the PDF in the files/ folder)
+#   preprint: Link to bioRxiv, etc.
+#   code:     Link to a GitHub repo
+#   data:     Link to Dryad, Zenodo, etc.
+#
+#
+# An asterisk (*) after a name marks an undergraduate mentee.
+
+- title: "HGTScanner: Detecting horizontal gene transfer at the fine scale using whole organelle genomes"
+  authors: "Cai, L. and R. O. Cohen"
+  year: 2026
+  venue: "Methods in Ecology and Evolution"
+  doi: "10.1111/2041-210x.70419"
+
+- title: "A reference genome and transcriptome of haustorial development in <i>Pedicularis groenlandica</i> reveal diverse trajectories of haustoria-associated gene evolution in parasitic plants"
+  authors: "Cohen, R. O., A. Chomentowska, L. Cai, and D. A. R. Eaton"
+  year: 2026
+  venue: "Annals of Botany"
+  doi: "10.1093/aob/mcag089"
+
+- title: "Phylogeny does not predict the outcome of heterospecific pollen–pistil interactions in a species-rich alpine plant community"
+  authors: "Cohen, R. O., A. Cisse*, J. U. Jones, J. H. Williams, and D. A. R. Eaton"
+  year: 2025
+  venue: "American Journal of Botany"
+  doi: "10.1002/ajb2.70004"
+
+- title: "From recognition to neglect: Molecular and physiological responses to heterospecific pollen decay with evolutionary distance"
+  authors: "Cohen, R. O., A. Masi*, S. M. Chin, J. H. Williams, and D. A. R. Eaton"
+  venue: "Evolution"
+  status: "Revisions submitted"
+  preprint: "https://doi.org/10.64898/2026.06.02.729600"

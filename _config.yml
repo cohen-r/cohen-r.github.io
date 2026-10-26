@@ -1,1 +1,38 @@
-theme: jekyll-theme-modernist
+# Site settings. Edit the values below; GitHub Pages rebuilds automatically.
+title: Rachel Cohen
+description: >-
+  Plant evolutionary biologist studying parasitic plants, pollination, and
+  genome evolution. Postdoctoral Associate at the University of Florida.
+url: "https://cohen-r.github.io"
+baseurl: ""
+
+author:
+  name: Rachel Cohen
+  # Every way your name appears in author lists. Each is bolded on the
+  # Publications page.
+  citation_names:
+    - "Cohen, R. O."
+    - "R. O. Cohen"
+
+# Contact and profile links. Leave a value blank ("") to hide it.
+email: "cohen.rachel@ufl.edu"
+github: cohen-r
+google_scholar: ""   # e.g. https://scholar.google.com/citations?user=XXXX
+orcid: ""            # e.g. 0000-0000-0000-0000
+cv: "/files/Cohen_CV.pdf"   # replace the PDF in files/ when you update your CV
+
+nav:
+  - title: About
+    url: /
+  - title: Publications
+    url: /publications/
+  - title: Teaching
+    url: /teaching/
+
+plugins:
+  - jekyll-seo-tag
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock

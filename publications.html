@@ -1,0 +1,43 @@
+---
+layout: default
+title: Publications
+permalink: /publications/
+---
+
+<h1>Publications</h1>
+<p class="section-note">An asterisk (*) marks an undergraduate mentee.</p>
+
+{% assign pubs = site.data.publications %}
+{% if pubs and pubs.size > 0 %}
+
+{% assign has_upcoming = false %}
+{% for p in pubs %}{% if p.status %}{% assign has_upcoming = true %}{% endif %}{% endfor %}
+
+<section aria-labelledby="published-heading">
+<h2 id="published-heading" class="visually-hidden">Published</h2>
+{% assign sorted = pubs | sort: "year" | reverse %}
+{% assign current_year = "" %}
+{% for p in sorted %}{% unless p.status %}
+  {% assign y = p.year | append: "" %}
+  {% if y != current_year %}
+    {% unless current_year == "" %}</ol></div>{% endunless %}
+    <div class="pub-year"><h3>{{ y }}</h3><ol class="pub-list">
+    {% assign current_year = y %}
+  {% endif %}
+  {% include pub.html p=p %}
+{% endunless %}{% endfor %}
+{% unless current_year == "" %}</ol></div>{% endunless %}
+</section>
+
+{% if has_upcoming %}
+<section aria-labelledby="upcoming-heading">
+<h2 id="upcoming-heading">In review and in preparation</h2>
+<ol class="pub-list">
+{% for p in pubs %}{% if p.status %}{% include pub.html p=p %}{% endif %}{% endfor %}
+</ol>
+</section>
+{% endif %}
+
+{% else %}
+<p>The publication list is being updated.{% if site.google_scholar != "" and site.google_scholar %} See <a href="{{ site.google_scholar }}">Google Scholar</a> for the current list.{% endif %}</p>
+{% endif %}

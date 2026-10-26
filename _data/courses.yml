@@ -1,0 +1,68 @@
+# Courses you have taught or assisted.
+#
+# Fields:
+#   title:   Course name
+#   type:    instructor (shown in full) or assistant (shown as a compact list)
+#   role:    e.g. "Instructor of record", "Teaching fellow"
+#   where:   e.g. "Columbia University"
+#   terms:   e.g. "Spring 2026"
+#   note:    Optional sentence or two (instructor courses only)
+#   link:    Optional link to a syllabus or course page
+
+- title: "Biological Interactions in a Changing World"
+  type: instructor
+  role: "Sole instructor of record, GSAS Teaching Scholar"
+  where: "Columbia University"
+  terms: "Spring 2026"
+  note: >-
+    A course I designed on the theory and empirical study of biotic
+    interactions and coevolution. Columbia’s Graduate School of Arts and
+    Sciences selected the syllabus for its Teaching Scholars program. I
+    prepared all lectures, exams, and interactive coding notebooks, and
+    handled all grading.
+
+- title: "Environmental Studies: Designing a Sustainable Future"
+  type: instructor
+  role: "Sole instructor"
+  where: "Columbia Pre-College Programs"
+  terms: "Summer 2026"
+  note: >-
+    A three-week college-level course for high school students on
+    biodiversity loss, climate change, and sustainable solutions. I wrote the
+    syllabus, planned every lesson and activity, and organized field trips.
+
+- title: "Statistical Modeling for Ecology and Evolution"
+  type: assistant
+  role: "Teaching fellow"
+  where: "Columbia University"
+  terms: "Fall 2022"
+
+- title: "Fundamentals of Evolution"
+  type: assistant
+  role: "Teaching fellow"
+  where: "Columbia University"
+  terms: "Fall 2021"
+
+- title: "Introduction to Statistics for Ecology and Evolution"
+  type: assistant
+  role: "Teaching fellow"
+  where: "Columbia University"
+  terms: "Fall 2020"
+
+- title: "Microbiology"
+  type: assistant
+  role: "Teaching assistant"
+  where: "Amherst College"
+  terms: "Spring 2019"
+
+- title: "Plant Form, Function, and Diversity"
+  type: assistant
+  role: "Teaching assistant"
+  where: "Amherst College"
+  terms: "Fall 2018"
+
+- title: "Introduction to Biology: Organism, Ecology, Evolution"
+  type: assistant
+  role: "Teaching assistant"
+  where: "Amherst College"
+  terms: "Spring 2017"
