@@ -196,7 +196,7 @@ figcaption {
      of the photo shows: 0% = top, 100% = bottom. */
   height: clamp(11rem, calc(100vh - 31rem), 26rem);
   object-fit: cover;
-  object-position: center 38%;
+  object-position: center 46%;
 }
 .hero-photo figcaption {
   position: absolute;
